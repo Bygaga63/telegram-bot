@@ -12,13 +12,13 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 @SpringBootApplication
 public class TelegramApplication implements CommandLineRunner {
     @Value("${bot.token}")
-    private String BOT_TOKEN = "720900952:AAHGWgJd4AedPMeS8ZKCInoVT2_8Cv5QCuM";
-    @Value("${bot.username}")
-    private String BOT_NAME  = "JOIN TO PARTY";
+    private String BOT_TOKEN;
+    @Value("${bot.name}")
+    private String BOT_NAME ;
     @Value("${proxy.host}")
-    private  String PROXY_HOST = "127.0.0.1";
+    private  String PROXY_HOST;
     @Value("${proxy.port}")
-    private  Integer PROXY_PORT = 	9150;
+    private  Integer PROXY_PORT;
     public static void main(String[] args) {
         SpringApplication.run(TelegramApplication.class, args);
     }
